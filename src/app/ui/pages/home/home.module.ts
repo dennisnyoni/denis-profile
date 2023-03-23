@@ -25,7 +25,7 @@ import { SuccessModule } from '../../common/success/success.module';
 import { ProgressModule } from '../../common/progress/progress.module';
 
 import { RecaptchaModule, RecaptchaV3Module, RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
-import { environment } from 'src/environments/environment';
+//import { environment } from 'src/environments/environment';
 import { IllustrationModule } from '../../widgets/illustrations/illustration.module';
 import { MyAppsComponent } from './home-showcases/my-apps/my-apps.component';
 import { ClientAppsComponent } from './home-showcases/client-apps/client-apps.component';
@@ -64,10 +64,10 @@ import { MyappItemComponent } from './home-showcases/myapp-item/myapp-item.compo
     IllustrationModule
   ],
   providers: [
-    {
-      provide: RECAPTCHA_V3_SITE_KEY,
-      useValue: environment.recaptcha
-    }
+    //{
+      //provide: RECAPTCHA_V3_SITE_KEY,
+      //useValue: environment.recaptcha
+    //}
   ],
 })
 export class HomeModule { }
